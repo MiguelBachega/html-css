@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.exercicio{
+    background-image: linear-gradient(45deg, #355399, #33597D, #EB7D32, #ED9A34, #FFFDF4);
+    height: 100vh;
+}
+
+.fonte{
+    font-size: 90px;
+}
