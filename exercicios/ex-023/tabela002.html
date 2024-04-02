@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body{
+            height: 1200px;
+        }
+        table{
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th{
+            border: 3px solid black;
+            width: 300px;
+            padding: 15px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        /* Efeito zebrado. Pode nomear linhas impares (odd) e linhas pares (even) ao invés de "2n" */
+        tbody tr:nth-child(2n){
+            background-color: rgba(255, 166, 0, 0.61);
+
+        }
+        thead, tfoot{
+            background-color: rgb(74, 72, 219);
+            color: white;
+        }
+
+        thead th{
+            position: sticky;
+            top: -2px;
+            background-color: rgb(74, 72, 219);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>20.538.718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>16.054.524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14 141 626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>11 444 380</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>10 882 965</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 058 931</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>8 794 957</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>8 121 025</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td><strong>144.956.175</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
