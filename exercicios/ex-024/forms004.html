@@ -7,21 +7,22 @@
 </head>
 <body>
     <form action="" method="post" autocomplete="on">
-        <p>
-            <label for="iemail">E-mail</label>
-            <input type="email" name="email" id="iemail" required pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/">
-        </p>
-        <p>
-            <label for="itelefone">Telefone</label>
-            <input type="tel" name="telefone" id="itelefone" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
-        
-        
-
+        <fieldset>
+            <legend> Dados pessoais</legend>
+                <p>
+                    <label for="iemail">E-mail</label>
+                    <input type="email" name="email" id="iemail" required pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/">
+                </p>
+                <p>
+                    <label for="itelefone">Telefone</label>
+                    <input type="tel" name="telefone" id="itelefone" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            
+        </fieldset>
     </form>
 </body>
 </html>
