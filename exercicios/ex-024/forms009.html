@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios - Mostrando o número da escala</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+       <p>
+        <label for="iesc">Número</label>
+        <input type="range" name="escala" id="iesc" min="0" max="10" required oninput="ival.innerHTML= Number(iesc.value)">
+        <output id="ival">5</output>
+       </p>
+    </form>
+</body>
+</html>
