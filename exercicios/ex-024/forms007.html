@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios - Patterns RegEx para telefone</title>
+</head>
+<style>
+    .profissao{
+        width: 230px;
+    }
+</style>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <label for="iest">Estado</label>
+        <select name="estado" id="iest">
+            <option value="">--- Escolha ---</option>
+            <optgroup label="Região Sudeste">
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+            </optgroup>
+                
+            <optgroup label="Região Nordeste">
+                <option value="MA">Maranhão</option>
+                <option value="PE">Pernambuco</option>
+                <option value="RN">Rio Grande do Norte</option>
+            </optgroup>
+        </select>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input class="profissao" type="text" name="prof" id="iprof" list="ilist" placeholder="Escolha ou digite sua profissão">
+            <datalist id="ilist">
+                <option>Administrador</option>
+                <option>Contabilista</option>
+                <option>Cozinheiro</option>
+                <option>Desenvolvedor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="itexto">Mensagem</label><br>
+            <textarea name="texto" id="itexto" cols="30" rows="10" placeholder="digite sua mensagem"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
