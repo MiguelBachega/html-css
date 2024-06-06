@@ -2,6 +2,8 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Decalotype';
+    box-sizing: border-box;
 }
 :root{
     --cor-principal: #2E2E2E;
@@ -46,27 +48,109 @@ nav{
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background-color: #00000050;
+    background-color: rgba(0, 0, 0, 0.45);
 }
 
-main section{
+.sec__principal{
+    
     z-index: 2;
     margin-top: -90px;
+    
+    width: 100%;
     height: 900px;
     background-image: url(img/bg-p.png);
     background-size: cover;
     background-position: center;
-    /* filter: brightness(0.35); */
+    
     
 }
 
-h1{
-    margin-top: 20rem;
-    color: #ffd93b;
-    font-family: 'Decalotype';
+.sobreposicao__section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+    gap: 50px;
+    padding: 10px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .50), #000000);
+}
+
+.container__texto__principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    
+}
+
+.container__texto__principal h1{
+    width: 60%;
+}
+
+.container__icone{
+    display: flex;
+    align-items: flex-end;
+    height: 200px;
+}
+#b1{
+    font-size: 18px;
+    color: white;
+    border: solid 1px #9E9E9E;
+    padding: 15px 40px;
+    border-radius: 2px;
     font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#b2{
+    font-size: 18px;
+    border: solid 1px #0E0E0E;
+    background-color: #0E0E0E;
+    padding: 15px 40px;
+    border-radius: 2px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.container__botoes{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+h1{
+    
+    color: var(--cor-secundaria);
+    font-weight: 600;
     z-index: 100;
-    font-size: 42px;
+    font-size: 61px;
+}
+
+h2{
+    font-weight: 400;
+    color: white;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+h3{
+    color: white;
+}
+
+a{
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+p{
+    font-weight: 400;
+    color: white;
+    font-size: 16px;
 }
 
 ul {
@@ -82,6 +166,7 @@ ul {
 
 li {
     float: left;
+    color: white;
   }
 
 li a {
