@@ -52,7 +52,7 @@ nav{
 }
 
 h1{
-    
+    margin-top: 10px;    
     color: var(--cor-secundaria);
     font-weight: 600;
     z-index: 100;
@@ -60,9 +60,10 @@ h1{
 }
 
 h2{
-    font-weight: 400;
+    margin-top: 10px;
+    font-weight: 600;
     color: white;
-    font-size: 32px;
+    font-size: 40px;
     letter-spacing: 1px;
 }
 
@@ -77,8 +78,8 @@ a{
 
 p{
     font-weight: 400;
-    color: white;
-    font-size: 16px;
+    color: #cccccc;
+    font-size: 18px;
 }
 
 ul {
@@ -178,7 +179,7 @@ li a {
 
 .sec__2{
     
-    padding: 45px;
+    padding: 76px 45px;
     background-color: #191919;
 }
 
@@ -186,20 +187,55 @@ li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
-    gap: 30px;
+    height: 516px;
+    gap: 20px;
 }
 
 .sec__2__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
     width: 50%;
+    height: 100%;
+    padding-left: 15%;
+}
+.sec__2__content p{
+    width: 65%;
+}
+.sec__2__content #c1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    
+    height: 85%;
+}
+#c1 p{
+    margin-top: 30px;
+}
+.sec__2__content #c2{
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    width: 80%;
 }
 
+
+.hr__w{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #424242;
+}
 .hold__image{
-    text-align: center;
+    text-align: start;
     width: 50%;
 }
 
 .img__sec2{
-    width: 90%;
+    width: 640px;
+    object-fit: cover;
 }
