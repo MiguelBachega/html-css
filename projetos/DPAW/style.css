@@ -95,7 +95,7 @@ ul {
 
 li {
     float: left;
-    color: white;
+    color: #cccccc;
   }
 
 li a {
@@ -128,6 +128,8 @@ li a {
     width: 50%;
     padding-right: 120px;
 }
+
+
 
 .container__flex__orientation__center{
     display: flex;
@@ -178,7 +180,7 @@ li a {
     align-items: flex-end;
     height: 200px;
 }
-#b1{
+.transparent__button{
     font-size: 18px;
     color: white;
     border: solid 1px #9E9E9E;
@@ -188,7 +190,7 @@ li a {
     letter-spacing: 1px;
 }
 
-#b2{
+.black__button{
     font-size: 18px;
     border: solid 1px #0E0E0E;
     background-color: #0E0E0E;
@@ -282,4 +284,46 @@ li a {
 .img__sec2{
     width: 640px;
     object-fit: cover;
+}
+
+.grid{
+    color: #e0e0e0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(107px, auto);
+}
+
+.grid > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border: 1px solid #616161;
+    text-align: center;
+    width: 219px;
+    font-size: 16px;
+}
+
+.div__vantagens{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    width: 28%;
+    margin-right: 100px;
+    padding-right: 30px;
+}
+
+.div__vantagens h2{
+    margin-top: 13px;
+}
+
+.div__vantagens h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+.div__vantagens a{
+    margin-top: 42px;
 }
