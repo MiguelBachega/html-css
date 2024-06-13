@@ -38,7 +38,9 @@
 }
 
 body{
-    background-color: #2B2B2B;
+    margin: 0 auto;
+    min-width: fit-content;
+    background-color: #191919;
 }
 
 nav{
@@ -105,7 +107,11 @@ li a {
     padding: 16px;
     text-decoration: none;
   }
-  
+
+.display__flex{
+    display: flex;
+}
+
 .list__orienation{
     display: block;
 }
@@ -118,7 +124,7 @@ li a {
     padding-left: 10px;
 }
 .container__properties{
-    width: 1520px;
+    width: 1620px;
     height: inherit;
     padding: 75px 45px;
     margin: auto;
@@ -126,7 +132,7 @@ li a {
 
 .container__half__equalwidth{
     width: 50%;
-    padding-right: 120px;
+    padding-right: 145px;
 }
 
 
@@ -219,7 +225,6 @@ li a {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    width: 1290px;
     height: 516px;
     gap: 20px;
 }
@@ -228,6 +233,7 @@ li a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     gap: 60px;
     width: 50%;
     height: 100%;
@@ -240,7 +246,7 @@ li a {
     justify-content: center;
     flex-direction: column;
     align-items: start;
-    
+    padding-left: 75px;
     height: 85%;
 }
 
@@ -272,7 +278,7 @@ li a {
 }
 
 .hr__w{
-    width: 100%;
+    width: 30%;
     background-color: transparent;
     border: 1px solid #424242;
 }
@@ -287,10 +293,11 @@ li a {
 }
 
 .grid{
-    color: #e0e0e0;
+    color: #E0E0E0;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-auto-rows: minmax(107px, auto);
+    width: 66%;
 }
 
 .grid > div{
@@ -301,8 +308,13 @@ li a {
     padding: 25px;
     border: 1px solid #616161;
     text-align: center;
-    width: 219px;
+    width: 246px;
     font-size: 16px;
+    font-weight: 400;
+}
+
+.grid .borderless{
+    border: 0px solid;
 }
 
 .div__vantagens{
@@ -311,13 +323,15 @@ li a {
     justify-content: center;
     align-items: start;
     gap: 10px;
-    width: 28%;
+    width: 30%;
     margin-right: 100px;
     padding-right: 30px;
 }
 
 .div__vantagens h2{
     margin-top: 13px;
+    color: var(--cor-secundaria);
+    font-size: 50px;
 }
 
 .div__vantagens h3{
@@ -326,4 +340,92 @@ li a {
 }
 .div__vantagens a{
     margin-top: 42px;
+}
+
+.container__LeiMaquila{
+    margin: 30px 0 30px 0;
+    padding: 80px 110px;
+    height: 555px;
+    background-color: #212121;
+}
+
+.container__LeiMaquila__div1{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container__LeiMaquila__div2{
+    margin-top: 65px;
+    text-align: start;
+}
+
+.container__LeiMaquila h2{
+    margin-bottom: 25px;
+    font-size: 61px;
+    font-weight: 600;
+}
+
+.container__LeiMaquila h3{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.container__LeiMaquila__div1 p{
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 500;
+    width: 55%;
+}
+
+.container__LeiMaquila__div2 p{
+    font-size: 18px;
+}
+
+.grid2col{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: minmax(210px, auto);
+    grid-gap: 30px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.caracteristicas__LeiMaquila{
+    display: flex;
+    align-items: flex-start;
+    padding: 30px;
+    background-color: #212121;
+}
+
+.caracteristicas__LeiMaquila p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.caracteristicas__LeiMaquila h4{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--cor-secundaria)
+}
+
+.caracteristicas__LeiMaquila > div{
+    margin-left: 33px;
+}
+
+.sec4__title{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    
+}
+
+.sec4__title h2{
+    color: var(--cor-secundaria);
+    font-size: 40px;
+}
+.sec4__title hr{
+    margin-top: 10px;
+    width: 71%;
 }
