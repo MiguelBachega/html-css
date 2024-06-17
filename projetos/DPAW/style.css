@@ -95,7 +95,7 @@ ul {
     overflow: hidden;
   }
 
-li {
+nav li {
     float: left;
     color: #cccccc;
   }
@@ -346,10 +346,9 @@ li a {
     margin-top: 42px;
 }
 
-.container__LeiMaquila{
+.container__padrao__sec__LeiMaquila{
     margin: 30px 0 30px 0;
     padding: 80px 110px;
-    max-height: 555px;
     background-color: #212121;
 }
 
@@ -363,13 +362,13 @@ li a {
     text-align: start;
 }
 
-.container__LeiMaquila h2{
+.container__padrao__sec__LeiMaquila h2{
     margin-bottom: 25px;
     font-size: 61px;
     font-weight: 600;
 }
 
-.container__LeiMaquila h3{
+.container__padrao__sec__LeiMaquila h3{
     margin-bottom: 20px;
     font-size: 30px;
     font-weight: 600;
@@ -439,3 +438,55 @@ li a {
     flex-direction: column;
     gap: 35px;
 }
+
+.container__padrao__sec__LeiMaquila#beneficios .grid2col{
+    width: 100%;
+    margin-top: 50px;
+    grid-gap: 45px;
+}
+
+.container__padrao__sec__LeiMaquila#beneficios h2{
+    font-size: 30px;
+}
+
+.container__padrao__sec__LeiMaquila#beneficios h3{
+    font-size: 24px;
+}
+
+.container__padrao__sec__LeiMaquila#beneficios h3 span{
+    color: var(--cor-secundaria);
+}
+
+.container__padrao__sec__LeiMaquila#beneficios p{
+    margin-top: 24px;
+}
+
+.grid1col{
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+    grid-auto-rows: minmax(180px,auto);
+}
+
+#isencoes__reducoes h2{
+    font-size: 30px;
+    color: var(--cor-secundaria);
+
+}
+
+#isencoes__reducoes p{
+    font-size: 18px;
+    width: fit-content;
+}
+
+#isencoes__reducoes i{
+    font-size: 7px;
+    color: var(--cor-secundaria);
+}
+
+#isencoes__reducoes div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
