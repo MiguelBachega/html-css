@@ -336,10 +336,6 @@ ul{
 }
 
 .div__vantagens{
-    display: ;
-}
-
-.div__vantagens{
     display: flex;
     flex-direction: column;
     justify-content: center;
