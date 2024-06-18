@@ -43,7 +43,7 @@ body{
     background-color: #191919;
 }
 
-nav{
+#menu__header{
     position: relative;
     z-index: 3;
     display: flex;
@@ -80,11 +80,16 @@ a{
 
 p{
     font-weight: 400;
-    color: #cccccc;
+    color: #9E9E9E;
     font-size: 18px;
+    line-height: 23px;
 }
 
-ul {
+
+ul{
+    list-style-type: none;
+}
+#menu__header ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -95,12 +100,12 @@ ul {
     overflow: hidden;
   }
 
-nav li {
+#menu__header nav li {
     float: left;
     color: #cccccc;
   }
 
-li a {
+#menu__header li a {
     display: block;
     color: white;
     text-align: center;
@@ -114,18 +119,18 @@ li a {
 
 .list__orienation{
     display: block;
-    width: 80%;
+    width: 100%;
 }
 
 .list__orienation > li{
     margin-top: 15px;
     font-size: 16px;
-    color: #E0E0E0;
+    color: #9E9E9E;
     border-left: solid 1px #FFD93B;
-    padding-left: 10px;
+    padding-left: 15px;
 }
 .container__properties{
-    max-width: 1620px;
+    max-width: 1420px;
     height: inherit;
     padding: 75px 45px;
     margin: auto;
@@ -133,7 +138,6 @@ li a {
 
 .container__half__equalwidth{
     width: 50%;
-    padding-right: 145px;
 }
 
 
@@ -247,15 +251,20 @@ li a {
     justify-content: center;
     flex-direction: column;
     align-items: start;
-    padding-left: 75px;
     height: 85%;
 }
 
 .sec__2__content #c2{
     display: flex;
     align-items: flex-end;
+    justify-content: flex-start;
     gap: 15px;
-    width: 80%;
+    width: 100%;
+    margin-top: 45px;
+}
+
+.sec__2__content #c2 hr{
+    width: 40%;
 }
 
 #c1 p{
@@ -277,11 +286,11 @@ li a {
 }
 
 .container__lista{
-    margin: 30px 0 0 30px;
+    margin: 30px 0 0 15px;
 }
 
 .hr__w{
-    width: 30%;
+    width: 100%;
     background-color: transparent;
     border: 1px solid #424242;
 }
@@ -309,7 +318,7 @@ li a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 25px;
+    padding: 22px 33px;
     border: 1px solid #616161;
     text-align: center;
     max-width: 246px;
@@ -319,6 +328,15 @@ li a {
 
 .grid .borderless{
     border: 0px solid;
+}
+
+.vantagens{
+    display: flex;
+    align-items: flex-end;
+}
+
+.div__vantagens{
+    display: ;
 }
 
 .div__vantagens{
@@ -343,7 +361,7 @@ li a {
     font-weight: 600;
 }
 .div__vantagens a{
-    margin-top: 42px;
+    margin-top: 10px;
 }
 
 .container__padrao__sec__LeiMaquila{
@@ -378,7 +396,7 @@ li a {
     display: inline-block;
     font-size: 24px;
     font-weight: 500;
-    width: 55%;
+    width: 90%;
 }
 
 .container__LeiMaquila__div2 p{
@@ -420,17 +438,15 @@ li a {
 .sec4__title{
     display: flex;
     align-items: center;
-    gap: 40px;
-    
+    gap: 20px;
 }
 
 .sec4__title h2{
+    display: inline-block;
     color: var(--cor-secundaria);
     font-size: 40px;
-}
-.sec4__title hr{
-    margin-top: 10px;
-    width: 71%;
+    margin-top: 0;
+    width: 45%;
 }
 
 .container__beneficios{
@@ -492,3 +508,164 @@ li a {
     color: #cccccc;
 }
 
+#contato{
+    background-image: url(img/background-com-detalhes.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+#contato h2{
+    font-size: 30px;
+}
+
+#contato h3{    
+    font-size: 14px;
+    padding-left: 4px;
+    font-weight: 400;
+    margin: 20px 0 5px 0;
+}
+
+#contato p{
+    font-size: 18px;
+}
+
+#contato > div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.container__form__contato{
+    background-color: #191919ce;
+    padding: 100px 20px;
+}
+
+.container__form__contato > div{
+    max-width: 641px;
+    margin-left: auto;
+    padding-right: 105px;
+}
+
+.container__form__contato p{
+    margin: 10px 0;
+    width: 70%;
+}
+
+.container__form__contato input,textarea{
+    width: 100%;
+    padding: 16px;
+    color: #757575;
+    background-color: #191919;
+    border: 2px solid #191919;
+    border-radius: 2px;
+    
+}
+
+.container__form__contato button{
+    background-color: var(--cor-secundaria);
+    border: 2px solid var(--cor-secundaria);
+    color: #0E0E0E;
+    padding: 13px 32px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    float: right;
+    margin-top: 35px;
+}
+
+
+textarea{
+    resize: none;
+}
+
+footer{
+    max-width: 1420px;
+    margin: auto;
+}
+
+
+#footer{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
+    padding: 45px;
+}
+
+#footer h2{
+    font-size: 34px;
+    color: var(--cor-secundaria);
+    margin-top: 0px;
+}
+
+#footer h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+    width: 40%;
+}
+
+footer h4{
+    font-size: 14px;
+    color: #757575;
+    font-weight: 400;
+}
+
+#footer nav{
+    position: relative;
+    z-index: 3;
+    margin-top: 65px;
+   
+}
+
+#footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    list-style-type: none;
+}
+
+#footer li a{
+    color: #ffffff;
+    font-size: 16px;
+}
+
+#footer p{
+    font-size: 14px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.info__empresa__footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.info__empresa__footer a{
+    padding: 8px 9px 6px 9px;
+    border: 1px solid #424242;
+    margin-left: 5px;
+    transition-property: border-color;
+    transition-duration: 0.5s;
+
+}
+
+.info__empresa__footer a:hover{
+    border-color: 1px solid var(--cor-secundaria);
+    
+}
+
+.rights__reserved{
+    max-width: 1420px;
+    padding: 20px 45px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.rights__reserved div{
+    display: flex;
+    justify-content: flex-end;
+}
