@@ -106,12 +106,38 @@ ul{
   }
 
 #menu__header li a {
+    position: relative;
     display: block;
     color: white;
     text-align: center;
-    padding: 16px;
+    padding: 10px;
     text-decoration: none;
   }
+
+#menu__header li a::before,
+#menu__header li a::after {
+  position: absolute;
+  width: 15px;
+  height: 10px;
+  content: "";
+  transition: border-color 1s ease-out;
+  border-color: transparent;
+  
+} 
+
+#menu__header li a:hover::before {
+    left: 0;
+    top: 0;
+    border-left: 2px solid var(--cor-secundaria);
+    border-top: 2px solid var(--cor-secundaria);
+   }
+
+#menu__header li a:hover::after{
+    right: 0;
+    bottom: 0;
+    border-right: 2px solid  var(--cor-secundaria);
+    border-bottom: 2px solid var(--cor-secundaria) ;
+}
 
 .display__flex{
     display: flex;
@@ -191,17 +217,10 @@ ul{
     align-items: flex-end;
     height: 200px;
 }
-.transparent__button{
-    font-size: 18px;
-    color: white;
-    border: solid 1px #9E9E9E;
-    padding: 15px 40px;
-    border-radius: 2px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
+
 
 .black__button{
+    position: relative;
     font-size: 18px;
     border: solid 1px #0E0E0E;
     background-color: #0E0E0E;
@@ -209,11 +228,87 @@ ul{
     border-radius: 2px;
     font-weight: 700;
     letter-spacing: 1px;
+    transition: all 0.5s, padding 0.5s, padding-left 0.5s 0.4s, padding-right 0.5s 0.4s;
+
+}
+
+.black__button:hover{
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 1px solid #fff5cb1e;
+    color: white;
+}
+
+.black__button::before,
+.black__button::after {
+  position: absolute;
+  width: 15px;
+  height: 10px;
+  content: "";
+  transition: border-color 1s ease-out;
+  border-color: transparent;
+} 
+
+.black__button:hover::before {
+    left: 0;
+    top: 0;
+    border-left: 2px solid var(--cor-secundaria);
+    border-top: 2px solid var(--cor-secundaria);
+   }
+
+.black__button:hover::after {
+    right: 0;
+    bottom: 0;
+    border-right: 2px solid  var(--cor-secundaria);
+    border-bottom: 2px solid var(--cor-secundaria) ;
+}
+
+.transparent__button{
+    position: relative;
+    font-size: 18px;
+    color: white;
+    border: solid 1px #9E9E9E;
+    padding: 15px 40px;
+    border-radius: 2px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.5s, padding 0.5s, padding-left 0.5s 0.4s, padding-right 0.5s 0.4s;
+}
+
+.transparent__button:hover{
+    padding: 10px 30px;
+    border: 1px solid #ffd83b28;
+    color: var(--cor-secundaria);
+}
+
+.transparent__button::before,
+.transparent__button::after {
+  position: absolute;
+  width: 15px;
+  height: 10px;
+  content: "";
+  transition: border-color 1s ease-out;
+  border-color: transparent;
+} 
+
+.transparent__button:hover::before {
+    left: 0;
+    top: 0;
+    border-left: 2px solid var(--cor-secundaria);
+    border-top: 2px solid var(--cor-secundaria);
+   }
+
+.transparent__button:hover::after {
+    right: 0;
+    bottom: 0;
+    border-right: 2px solid  var(--cor-secundaria);
+    border-bottom: 2px solid var(--cor-secundaria) ;
 }
 
 .container__botoes{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 30px;
     margin-top: 20px;
 }
@@ -624,6 +719,7 @@ footer h4{
     position: relative;
     color: #ffffff;
     font-size: 16px;
+    padding: 10px;
 
 }
 
@@ -633,20 +729,23 @@ footer h4{
   width: 15px;
   height: 10px;
   content: "";
-}
+  transition: border-color 1s ease-out;
+  border-color: transparent;
+  
+} 
 
-#footer li a::before {
+#footer li a:hover::before {
     left: 0;
     top: 0;
-    border-left: 3px solid var(--cor-secundaria);
-    border-top: 3px solid var(--cor-secundaria);
+    border-left: 2px solid var(--cor-secundaria);
+    border-top: 2px solid var(--cor-secundaria);
    }
 
-#footer li a::after{
+#footer li a:hover::after{
     right: 0;
     bottom: 0;
-    border-right: 3px solid var(--cor-secundaria);
-    border-bottom: 3px solid var(--cor-secundaria);
+    border-right: 2px solid  var(--cor-secundaria);
+    border-bottom: 2px solid var(--cor-secundaria) ;
 }
 
 #footer p{
