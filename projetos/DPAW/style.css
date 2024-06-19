@@ -37,11 +37,16 @@
     font-weight: 700;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0 auto;
     min-width: fit-content;
     background-color: #191919;
 }
+
 
 #menu__header{
     position: relative;
