@@ -13,7 +13,7 @@
         margin-top: 15px;
         font-size: 16px;
         color: #9E9E9E;
-        border-left: solid 1px #FFD93B;
+        border-left: solid 1px @cor-secundaria;
         padding-left: 15px;
     }
 }
@@ -64,9 +64,25 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 10px;
+    width: 60%;
     h1{
-        width: 60%;
+        font-size: 60px;
+        width: 90%;
+        color: @cor-secundaria;
+        font-weight: 700;
+    }
+    span{
+        color: @cor-secundaria;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: @cor-secundaria;
+        font-size: 75px;
+        font-weight: 700;
+        font-family: @fonte-principal;
+    }
+    h2{
+        font-size: 30px;
+        font-weight: 500;
     }
 }
 
@@ -283,11 +299,15 @@
         h2{
             margin-top: 13px;
             color: @cor-secundaria;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: @cor-secundaria;
+            font-weight: 700;
             font-size: 50px;
         }
         h3{
             font-size: 30px;
-            font-weight: 600;
+            font-weight: 700;
         }
         a{
             margin-top: 10px;
@@ -316,7 +336,9 @@
 .container__LeiMaquila__div1{
     margin: 0 auto;
     text-align: center;
-
+    h2{
+        font-weight: 700;
+    }
     p{
         display: inline-block;
         font-size: 24px;
@@ -328,6 +350,9 @@
 .container__LeiMaquila__div2{
     margin-top: 65px;
     text-align: start;
+    h3{
+        margin-top: 10px;
+    }
     p{
         font-size: 18px;
     }
@@ -374,6 +399,7 @@
             font-size: 40px;
             margin-top: 0;
             width: 45%;
+            font-weight: 600;
         }
 }
 
@@ -485,7 +511,7 @@
             border: 2px solid @cor-secundaria;
             color: #0E0E0E;
             padding: 13px 32px;
-            font-size: 16px;
+            font-size: 14px;
             font-family: "Inter", sans-serif;
             font-weight: 700;
             float: right;
@@ -516,6 +542,9 @@ footer{
     h2{
         font-size: 34px;
         color: @cor-secundaria;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: @cor-secundaria;
         margin-top: 0px;
     }
     h3{
@@ -532,7 +561,7 @@ footer{
     nav{
         z-index: 3;
         margin-top: 65px;
-       
+        margin-left: -10px;
     }
     ul{
         display: flex;
